@@ -1,5 +1,6 @@
 # Многопользовательский сервис хранения файлов</br>
-Java, Spring Boot, MySQL, FreeMarker, Bootstrap</br>
+Java 1.8, Spring Boot 2.1.3.RELEASE, MySQL, FreeMarker, Bootstrap.</br>
+Пример обращения http://localhost:8080</br>
 В приложении предусмотрены 3 роли: "Пользователь", "Администратор", "Аналитик".</br>
 Главная страница:
 ![Image alt](https://github.com/yanagus/file_sharing/raw/master/image/main.png)
