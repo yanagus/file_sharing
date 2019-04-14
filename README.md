@@ -2,7 +2,7 @@
 Java, Spring Boot, MySQL, FreeMarker, Bootstrap</br>
 В приложении предусмотрены 3 роли: "Пользователь", "Администратор", "Аналитик"
 Главная страница:
-![Image alt](https://github.com/yanagus/file_sharing/image/main.png)
+<img src="https://github.com/yanagus/file_sharing/raw/master/image/main.png">
 
 Форма регистрации нового пользователя:
 ![Image alt](https://github.com/yanagus/file_sharing/raw/master/image/reg_form.png)
