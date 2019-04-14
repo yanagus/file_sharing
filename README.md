@@ -18,11 +18,11 @@ Java 1.8, Spring Boot 2.1.3.RELEASE, MySQL, FreeMarker, Bootstrap.</br>
 ![Image alt](https://github.com/yanagus/file_sharing/raw/master/image/successfully_activated.png)
 
 Пользователь может загружать и скачивать загруженные файлы. Удалять можно только свои файлы.</br>
-Пользователь может дать доступ другому пользователю сервиса на просмотр списка своих файлов или на скачивание.</br>
-![Image alt](https://github.com/yanagus/file_sharing/raw/master/image/subscribers.png)
 Пользователь может запросить доступ на просмотр списка или на скачивание файлов другого пользователя.
 ![Image alt](https://github.com/yanagus/file_sharing/raw/master/image/no_access.png)
-Страница, если разрешён только просмотри файлов:
+Пользователь может дать доступ другому пользователю сервиса на просмотр списка своих файлов или на скачивание.</br>
+![Image alt](https://github.com/yanagus/file_sharing/raw/master/image/subscribers.png)
+Страница, если разрешён только просмотр файлов:
 ![Image alt](https://github.com/yanagus/file_sharing/raw/master/image/read.png)
 Страница, если разрешено скачивание:
 ![Image alt](https://github.com/yanagus/file_sharing/raw/master/image/download.png)
