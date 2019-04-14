@@ -7,9 +7,9 @@ Java, Spring Boot, MySQL, FreeMarker, Bootstrap</br>
 Форма регистрации нового пользователя:
 ![Image alt](https://github.com/yanagus/file_sharing/raw/master/image/reg_form.png)
 Форма регистрации нового пользователя, если данные не введены:
-![Image alt](https://github.com/yanagus/file_sharing/raw/master/image/not_valid_reg_form.png)
+![Image alt](https://github.com/yanagus/file_sharing/raw/master/image/reg_form2.png)
 При успешной регистрации выдается сообщение, что необходимо перейти по ссылке отправленной на email.
-![Image alt](https://github.com/yanagus/file_sharing/raw/master/image/activate_account.png)
+![Image alt](https://github.com/yanagus/file_sharing/raw/master/image/activate.png)
 Ссылка действительна в течение 24х часов. По прошествии большего времени с момента регистрации, выдается сообщение:
 ![Image alt](https://github.com/yanagus/file_sharing/raw/master/image/link_expired.png)
 При успешной активации выдается форма логина с сообщением, что учетная запись активирована
