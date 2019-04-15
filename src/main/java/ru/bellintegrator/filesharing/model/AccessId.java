@@ -3,6 +3,7 @@ package ru.bellintegrator.filesharing.model;
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
 import java.io.Serializable;
+import java.util.Objects;
 
 /**
  * Первичный ключ к таблице доступа к файлам
@@ -44,5 +45,27 @@ public class AccessId implements Serializable {
 
     public void setSubscriberId(Integer subscriberId) {
         this.subscriberId = subscriberId;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        AccessId accessId = (AccessId) o;
+        return Objects.equals(userId, accessId.userId) &&
+                Objects.equals(subscriberId, accessId.subscriberId);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(userId, subscriberId);
+    }
+
+    @Override
+    public String toString() {
+        return "AccessId{" +
+                "userId=" + userId +
+                ", subscriberId=" + subscriberId +
+                '}';
     }
 }

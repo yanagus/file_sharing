@@ -8,6 +8,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.MapsId;
 import javax.persistence.Version;
 import java.io.Serializable;
+import java.util.Objects;
 
 /**
  * Доступ к файлам для других пользователей
@@ -115,5 +116,35 @@ public class Access implements Serializable {
 
     public void setRequest(boolean request) {
         this.request = request;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Access access = (Access) o;
+        return Objects.equals(id, access.id) &&
+//                Objects.equals(user, access.user) &&
+//                Objects.equals(subscriber, access.subscriber) &&
+                Objects.equals(readAccess, access.readAccess) &&
+                Objects.equals(downloadAccess, access.downloadAccess) &&
+                Objects.equals(request, access.request);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, /*user, subscriber,*/ readAccess, downloadAccess, request);
+    }
+
+    @Override
+    public String toString() {
+        return "Access{" +
+                "id=" + id +
+                ", user=" + user +
+                ", subscriber=" + subscriber +
+                ", readAccess=" + readAccess +
+                ", downloadAccess=" + downloadAccess +
+                ", request=" + request +
+                '}';
     }
 }

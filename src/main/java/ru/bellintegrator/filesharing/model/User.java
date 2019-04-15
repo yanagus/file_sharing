@@ -131,6 +131,18 @@ public class User implements UserDetails, Serializable {
     )
     private Set<Access> subscribers = new HashSet<>();
 
+    public User() {
+    }
+
+    public User(Integer id, String username, String password, String email, String activationCode, Boolean isConfirmed) {
+        this.id = id;
+        this.username = username;
+        this.password = password;
+        this.email = email;
+        this.activationCode = activationCode;
+        this.isConfirmed = isConfirmed;
+    }
+
     public Integer getId() {
         return id;
     }
@@ -301,13 +313,23 @@ public class User implements UserDetails, Serializable {
                 Objects.equals(username, user.username) &&
                 Objects.equals(password, user.password) &&
                 Objects.equals(email, user.email) &&
-                Objects.equals(activationCode, user.activationCode) &&
-                Objects.equals(registrationDate, user.registrationDate) &&
                 Objects.equals(isConfirmed, user.isConfirmed);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, username, password, email, activationCode, registrationDate, isConfirmed);
+        return Objects.hash(id, username, password, email, isConfirmed);
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
+                ", activationCode='" + activationCode + '\'' +
+                ", isConfirmed=" + isConfirmed +
+                '}';
     }
 }
